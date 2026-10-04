@@ -100,3 +100,12 @@ cd android-interview-prep
 python3 -m http.server 8080
 ```
 Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+
+## License, contributions and security
+
+Original material is available under the [MIT License](LICENSE). Preserve the copyright and license notice when reusing it. Third-party material retains its own terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+
+### Current study platform
+
+This earlier version remains available for existing links. For the current shared reader and learning plans, visit [Android Study Studio](https://android-study-studio-satdev.web.app/) and its [repository](https://github.com/satdevkumar021-glitch/android-study-studio).
