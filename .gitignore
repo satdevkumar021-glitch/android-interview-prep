@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .system_generated/
 *.log
+node_modules/
+review-artifacts/
