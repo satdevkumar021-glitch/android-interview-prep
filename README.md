@@ -109,3 +109,17 @@ Original material is available under the [MIT License](LICENSE). Preserve the co
 ### Current study platform
 
 This earlier version remains available for existing links. For the current shared reader and learning plans, visit [Android Study Studio](https://android-study-studio-satdev.web.app/) and its [repository](https://github.com/satdevkumar021-glitch/android-study-studio).
+
+## Sidebar scrolling regression checks
+
+The sidebar shell keeps its logo, filter, readiness card and footer pinned. Only the topic list scrolls; scrolling its boundary does not scroll the article. Mobile navigation locks background scrolling while open. Compact spacing keeps the topic list usable in short/landscape windows.
+
+```sh
+npm ci
+npx playwright install chromium
+python3 -m http.server 8794 --bind 127.0.0.1
+# In a second terminal:
+npm run test:sidebar
+```
+
+`TEST_BASE_URL` overrides the local preview URL. The regression checks exercise the dashboard and all 41 modules at desktop, short desktop, mobile portrait and mobile landscape sizes. Browser artifacts are written to the ignored `review-artifacts` directory. These Chromium checks do not claim Safari or real-device coverage.

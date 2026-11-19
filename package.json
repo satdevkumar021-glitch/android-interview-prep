@@ -1,0 +1,7 @@
+{
+  "name": "android-interview-prep",
+  "private": true,
+  "license": "MIT",
+  "scripts": {"test:sidebar": "node tests/sidebar-scroll.mjs"},
+  "devDependencies": {"playwright": "1.58.2"}
+}

@@ -670,6 +670,7 @@
   function toggleMobileSidebar(force) {
     const isOpen = typeof force === 'boolean' ? force : !document.body.classList.contains('sidebar-open');
     document.body.classList.toggle('sidebar-open', isOpen);
+    document.querySelector('.hamburger')?.setAttribute('aria-expanded', String(isOpen));
   }
 
   function initSidebar() {
